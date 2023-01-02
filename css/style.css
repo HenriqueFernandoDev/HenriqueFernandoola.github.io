@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
 }
 img{
   max-width: 100%;
@@ -99,6 +100,7 @@ a {
 .introducao-bg{
   background-color: #000000;
   color: #ffffff;
+  box-shadow:inset 0 -120px #ffffff;/*para imagem vazar*/
 }
 
 .introducao{
@@ -114,7 +116,12 @@ a {
 }
 .introducao-conteudo{
   align-self: end;
-  padding-bottom: 80px;
+  padding-bottom: 200px;/*para imagem vazar, o padding era de 80, mas tem que se somar com o valor vazado da imagem 120px ficando agora 200px */
+}
+/*para imagem vazar*/
+.introducao img{
+  height: 100%;
+  object-fit: cover;
 }
 
 .introducao h1{
