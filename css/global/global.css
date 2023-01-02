@@ -8,8 +8,13 @@ img{
   max-width: 100%;
   display: block;
 }
-
+img[src$=".jpg"] { /*afeta apenas imagens jgp usando esse codigo -> img[src$=".jpg"]*/
+border-radius: 4px;
+}
 h1,
+h2,
+h3,
+h4,
 p,
 ul{
   margin: 0px;
